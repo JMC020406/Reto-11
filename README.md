@@ -243,6 +243,9 @@ print (f"La suma de los elementos de la {x} fila de la matriz {A} es igual a {su
 Compuestas de 3 partes estos programas en lo único que difieren es en la posición que toma x (columna o fila la cual se quiere sumar), el cual esta dentro del ciclo "for" el cual nos ayuda a llamar a todos los valores de esa fila o columna para luego sumarlos. El resto del código es creación de la matriz y la impresión de los resultados.
 
 Todas las imagenes e información fue sacada de Wikipedia:
+
 https://es.wikipedia.org/wiki/Adición_matricial
+
 https://es.wikipedia.org/wiki/Multiplicación_de_matrices
+
 https://es.wikipedia.org/wiki/Matriz_transpuesta
