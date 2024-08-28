@@ -176,3 +176,68 @@ for fila in (trans_de_matriz(A,f,c)):
     print (fila)
 ```
 Como se puede apreciar el código es MUY similar al de los previos puntos del reto, y si eso se debe a que otra vez use la misma estructura para contruir la matriz y para llamar a los elementos dentro de esta. Pero lo que nos importa nuevamente está en la función, la cual hace que los elementos de la matriz A sean llamados pero con unos indices invertidos a los que deberia tener en el orden natural de la matriz original. Eso permite que al anexar los elementos a una matriz nueva esta quede como la matriz transpuesta de la original.
+
+### Punto 4 y 5 / Suma de una fila o columna determianda de una matriz.
+Estos dos puntos al ser tan similares los incluire en la misma explicación, además de que esto no tiene mucho misterio a comparación de esos 3 puntos previos los cuales son para sentarse un rato y entender como realmente funcionan.
+
+#### Suma de una columna.
+```py
+def suma_columna (A=list, f=int, x=int)->float:
+
+    sum_col = 0
+    for wa in range (f):
+        sum_col += (A[wa][x-1])
+
+    return sum_col
+
+if __name__ == "__main__":
+    f=int(input("Ingrese la cantidad de filas que tendra la matriz A: "))
+    c=int(input("Ingrese la cantidad de columnas que tendra la matriz A: "))
+    
+    A = []
+
+    for wa in range (f):
+        A1 = []
+        for we in range (c):
+            a=float(input(f"Indique cual valor ira en ({wa+1} , {we+1}): "))
+            A1.append (a)
+        A.append (A1)
+
+    x=int(input("Cual columna quiere sumar: "))
+
+suma_col = suma_columna(A,f,x)
+
+print (f"La suma de los elementos de la {x} columna de la matriz {A} es igual a {suma_col}")
+```
+
+#### Suma de una fila.
+```py
+def suma_fila (A=list, c=int, x=int)->float:
+
+    sum_fil = 0
+    for wa in range (c):
+        sum_fil += (A[x-1][wa])
+
+    return sum_fil
+
+if __name__ == "__main__":
+    f=int(input("Ingrese la cantidad de filas que tendra la matriz A: "))
+    c=int(input("Ingrese la cantidad de columnas que tendra la matriz A: "))
+    
+    A = []
+
+    for wa in range (f):
+        A1 = []
+        for we in range (c):
+            a=float(input(f"Indique cual valor ira en ({wa+1} , {we+1}): "))
+            A1.append (a)
+        A.append (A1)
+
+    x=int(input("Cual fila quiere sumar: "))
+
+suma_fil = suma_fila(A,c,x)
+
+print (f"La suma de los elementos de la {x} fila de la matriz {A} es igual a {suma_fil}")
+```
+
+Compuestas de 3 partes estos programas en lo único que difieren es en la posición que toma x (columna o fila la cual se quiere sumar), el cual esta dentro del ciclo "for" el cual nos ayuda a llamar a todos los valores de esa fila o columna para luego sumarlos. El resto del código es creación de la matriz y la impresión de los resultados.
