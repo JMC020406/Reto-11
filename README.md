@@ -175,3 +175,4 @@ print ("Matriz transpuesta: ")
 for fila in (trans_de_matriz(A,f,c)):
     print (fila)
 ```
+Como se puede apreciar el código es MUY similar al de los previos puntos del reto, y si eso se debe a que otra vez use la misma estructura para contruir la matriz y para llamar a los elementos dentro de esta. Pero lo que nos importa nuevamente está en la función, la cual hace que los elementos de la matriz A sean llamados pero con unos indices invertidos a los que deberia tener en el orden natural de la matriz original. Eso permite que al anexar los elementos a una matriz nueva esta quede como la matriz transpuesta de la original.
