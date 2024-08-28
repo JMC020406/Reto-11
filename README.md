@@ -1,5 +1,9 @@
 # Reto-11
-### Matrices
+## Matrices
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/1f82b68c-b627-471d-90cb-879caf078409" />
+</p
 
 Las matrices en programación se puede decir que son una lista que contiene una cierta cantidad de vectores, siendo así la cantidad de elementos que hay en cada vector (que por cierto, todos los vectores deben tener la misma cantidad de elementos) es equivalente a la cantidad de columnas la matriz y la cantidad de vectores está directamente relacionada con la cantidad de filas que tiene la matriz. Entonces se podría decir que este reto es similar al previo de "Arreglos y listas", y que en lo único en que varia es en la presentación de las listas.
 
